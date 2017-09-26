@@ -55,14 +55,14 @@ public class DatabaseConfig {
 
     @Bean
     @Primary
-    @ConfigurationProperties("template.datasource")
+    @ConfigurationProperties("config-db.datasource")
     public DataSource templateDataSource() {
         return DataSourceBuilder.create().build();
     }
 
-    @Bean
-    @ConfigurationProperties("server.datasource")
-    public DataSource serverDataSource() {
-        return DataSourceBuilder.create().build();
-    }
+//    @Bean
+//    @ConfigurationProperties("server.datasource")
+//    public DataSource serverDataSource() {
+//        return DataSourceBuilder.create().build();
+//    }
 }

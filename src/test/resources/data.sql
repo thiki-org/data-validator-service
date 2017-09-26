@@ -45,5 +45,11 @@ CREATE TABLE `vd_comment` (
 
 -- Data for Testing
 
+INSERT INTO `vd_product` (`id`, `name`, `prize`, `description`, `status`)
+VALUES
+	(1, 'RWC book', 50, 'RESTful Web Clients', 1);
 
 
+INSERT INTO `vd_promotion` (`id`, `product_id`, `description`, `status`, `beginTime`, `endTime`, `discount`)
+VALUES
+	(1, 1001, 'Refactoring Book', 1, '2017-09-25', '2017-09-30', 20);
