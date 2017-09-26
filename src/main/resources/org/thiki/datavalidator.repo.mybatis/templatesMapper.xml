@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="org.thiki.datavalidator.biz.groupcampaign.TemplatesMapper">
+
+	<select id="fetchAbnormalAffairs" resultType="com.hoolai.datavalidator.biz.groupcampaign.AbnormalAffair">
+        select * from ``
+	</select>
+
+<!--
+	<select id="getActivityAndServerMapping" resultType="com.hoolai.sango.admin.activity.ActivityTemplateServer">
+		select * from activity_server where TemplateId = #{templateId} and ProductId = #{productId} and ServerId = #{serverId}
+	</select>
+-->
+
+</mapper>
